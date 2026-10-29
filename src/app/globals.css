@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-cream: #f6f5f1;
-  --color-paper: #ece9e2;
-  --color-line: #d8d5ce;
+  --color-cream: #ffffff;
+  --color-paper: #f2f2f2;
+  --color-line: #e3e3e3;
   --color-ink: #181818;
   --color-mute: #62615c;
-  --color-stone: #c4ad8e;
-  --color-stone-deep: #7a6446;
+  --color-stone: #8a8a8a;
+  --color-stone-deep: #555555;
   --font-display: var(--font-jost), "Futura", "Century Gothic", system-ui, sans-serif;
   --font-sans: var(--font-jost), "Futura", "Century Gothic", system-ui, sans-serif;
 }
@@ -91,7 +91,7 @@ em { font-style: normal; }
 
 /* Map */
 .map-frame .maplibregl-canvas { filter: sepia(0.3) saturate(0.55) contrast(0.96); }
-.maplibregl-ctrl-attrib { font-size: 10px; background: rgba(246,245,241,0.85) !important; }
+.maplibregl-ctrl-attrib { font-size: 10px; background: rgba(255,255,255,0.85) !important; }
 .pin {
   width: 26px; height: 26px; border-radius: 50%;
   display: grid; place-items: center;
@@ -104,7 +104,7 @@ em { font-style: normal; }
 .pin-a { background: var(--color-ink); color: var(--color-cream); }
 .pin-t { background: var(--color-stone); color: var(--color-ink); }
 .pin:hover, .pin:focus-visible, .pin.active { transform: scale(1.3); z-index: 5; }
-.pin.active { box-shadow: 0 0 0 4px rgba(196,173,142,0.5); }
+.pin.active { box-shadow: 0 0 0 4px rgba(138,138,138,0.5); }
 .city-pin {
   display: flex; align-items: center; gap: 8px; cursor: pointer;
   background: var(--color-cream); color: var(--color-ink);

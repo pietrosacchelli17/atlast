@@ -75,7 +75,7 @@ export function AtlasMap({ places, destinations = [], selected, onSelect, onSele
     m.on("load", () => {
       sync();
       m.addSource("route", { type: "geojson", data: { type: "Feature", properties: {}, geometry: { type: "LineString", coordinates: [] } } });
-      m.addLayer({ id: "route", type: "line", source: "route", paint: { "line-color": "#7a6446", "line-width": 2, "line-dasharray": [2, 2] } });
+      m.addLayer({ id: "route", type: "line", source: "route", paint: { "line-color": "#555555", "line-width": 2, "line-dasharray": [2, 2] } });
       ready.current = true;
       applyRoute();
     });
