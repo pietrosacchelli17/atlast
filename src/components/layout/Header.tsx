@@ -21,6 +21,12 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-cream">
+      <a
+        href="https://petrus-atelier-site.vercel.app"
+        className="block border-b border-line px-5 py-1.5 text-[0.65rem] uppercase tracking-[0.16em] text-mute transition-colors hover:text-ink sm:px-8 lg:px-12"
+      >
+        ← Petrus Atelier
+      </a>
       <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <span onClick={() => setOpen(false)}><Wordmark /></span>
         <nav aria-label="Primary" className="hidden items-center gap-9 md:flex">
