@@ -29,7 +29,7 @@ export default async function ArticlePage({ params }: PageProps<"/journal/[slug]
         <Picture src={a.image} alt={a.title} seed={a.slug} priority className="mt-10 aspect-[16/9] w-full" />
       </Container>
       <Container className="max-w-[720px] py-14">
-        <p className="display mb-10 text-3xl italic leading-tight">{a.excerpt}</p>
+        <p className="display mb-10 text-3xl  leading-tight">{a.excerpt}</p>
         <div className="prose-ed text-lg leading-relaxed">{a.body.map((t, i) => <p key={i}>{t}</p>)}</div>
         <p className="mt-10 border-l-2 border-stone pl-4 text-sm text-mute">Placeholder article. Text is illustrative and not a report of fact.</p>
       </Container>

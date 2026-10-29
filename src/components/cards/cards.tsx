@@ -41,7 +41,7 @@ export function GuideCard({ g, wide = false }: { g: Guide; wide?: boolean }) {
     <Link href={`/guides/${g.slug}`} className="group block">
       <Picture src={g.image} alt={g.title} seed={g.slug} className={wide ? "aspect-[16/10]" : "aspect-[4/3]"} />
       <div className="mt-4 flex items-center gap-3">
-        <span className={`px-2 py-0.5 text-[10px] font-medium uppercase tracking-[0.14em] ${g.premium ? "bg-ink text-cream" : "border border-ink"}`}>
+        <span className={`px-2 py-0.5 text-[10px] font-normal uppercase tracking-[0.14em] ${g.premium ? "bg-ink text-cream" : "border border-ink"}`}>
           {g.premium ? `Premium · ${formatPrice(g.priceMinor)}` : "Free"}
         </span>
         <span className="eyebrow">{dest?.name} · {g.duration}</span>

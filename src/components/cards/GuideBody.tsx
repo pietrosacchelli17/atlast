@@ -51,7 +51,7 @@ export function GuideBody({ guide, stops }: { guide: Guide; stops: Stop[] }) {
             <button
               type="button"
               onClick={() => buy(guide.slug)}
-              className="mt-5 bg-ink px-6 py-3.5 text-[0.78rem] font-medium uppercase tracking-[0.14em] text-cream hover:bg-stone-deep"
+              className="mt-5 bg-ink px-6 py-3.5 text-[0.78rem] font-normal uppercase tracking-[0.14em] text-cream hover:bg-stone-deep"
             >
               Buy for {formatPrice(guide.priceMinor)} (mock)
             </button>
@@ -69,7 +69,7 @@ export function GuideBody({ guide, stops }: { guide: Guide; stops: Stop[] }) {
             className="h-[460px] w-full"
           />
           {unlocked && (
-            <button type="button" onClick={download} className="mt-4 border border-ink px-5 py-3 text-[0.78rem] font-medium uppercase tracking-[0.14em] hover:bg-ink hover:text-cream">
+            <button type="button" onClick={download} className="mt-4 border border-ink px-5 py-3 text-[0.78rem] font-normal uppercase tracking-[0.14em] hover:bg-ink hover:text-cream">
               Download itinerary (.txt)
             </button>
           )}

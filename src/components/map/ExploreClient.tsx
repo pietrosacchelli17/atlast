@@ -53,7 +53,7 @@ export function ExploreClient({
     });
 
   const chip = (on: boolean) =>
-    `shrink-0 whitespace-nowrap border px-3.5 py-2 text-[0.72rem] font-medium uppercase tracking-[0.12em] transition-colors ${on ? "border-ink bg-ink text-cream" : "border-line hover:border-ink"}`;
+    `shrink-0 whitespace-nowrap border px-3.5 py-2 text-[0.72rem] font-normal uppercase tracking-[0.12em] transition-colors ${on ? "border-ink bg-ink text-cream" : "border-line hover:border-ink"}`;
 
   const filters = (
     <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:thin]" role="group" aria-label="Filter by category">

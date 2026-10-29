@@ -26,7 +26,7 @@ export function DemoBadge({ className = "" }: { className?: string }) {
   return (
     <span
       title="Demonstration content. Not verified by ATLAST editors."
-      className={`inline-block border border-current px-1.5 py-[1px] text-[9px] font-medium uppercase tracking-[0.14em] ${className}`}
+      className={`inline-block border border-current px-1.5 py-[1px] text-[9px] font-normal uppercase tracking-[0.14em] ${className}`}
     >
       Demo content
     </span>
@@ -42,7 +42,7 @@ export function ButtonLink({
     light: "border border-cream/60 text-cream hover:bg-cream hover:text-ink",
   }[variant];
   return (
-    <Link href={href} className={`inline-flex items-center gap-2 px-6 py-3.5 text-[0.78rem] font-medium uppercase tracking-[0.14em] transition-colors duration-300 ${styles} ${className}`}>
+    <Link href={href} className={`inline-flex items-center gap-2 px-6 py-3.5 text-[0.78rem] font-normal uppercase tracking-[0.14em] transition-colors duration-300 ${styles} ${className}`}>
       {children}
     </Link>
   );
@@ -50,7 +50,7 @@ export function ButtonLink({
 
 export function PinMark({ kind }: { kind: "A" | "T" }) {
   return (
-    <span aria-hidden className={`inline-grid h-5 w-5 place-items-center rounded-full text-[10px] font-medium ${kind === "A" ? "bg-ink text-cream" : "bg-stone text-ink"}`}>
+    <span aria-hidden className={`inline-grid h-5 w-5 place-items-center rounded-full text-[10px] font-normal ${kind === "A" ? "bg-ink text-cream" : "bg-stone text-ink"}`}>
       {kind}
     </span>
   );

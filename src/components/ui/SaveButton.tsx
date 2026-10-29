@@ -27,7 +27,7 @@ export function SaveButton({ slug, name, variant = "pill", className = "" }: { s
       type="button"
       onClick={() => toggle(slug)}
       aria-pressed={on}
-      className={`inline-flex items-center gap-2 border border-ink px-5 py-3 text-[0.78rem] font-medium uppercase tracking-[0.14em] transition-colors ${on ? "bg-ink text-cream" : "hover:bg-ink hover:text-cream"} ${className}`}
+      className={`inline-flex items-center gap-2 border border-ink px-5 py-3 text-[0.78rem] font-normal uppercase tracking-[0.14em] transition-colors ${on ? "bg-ink text-cream" : "hover:bg-ink hover:text-cream"} ${className}`}
     >
       {heart}
       {on ? "Saved" : "Save place"}

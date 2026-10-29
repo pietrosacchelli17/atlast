@@ -1,17 +1,15 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 
-// Same pairing as the Petrus Atelier / Keystone / PS Gallery static site.
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
+// Jost, a thin geometric sans, shared across the four sites.
+const jost = Jost({
+  variable: "--font-jost",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  style: ["normal", "italic"],
+  weight: ["200", "300", "400"],
 });
-const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: { default: "[AT]last — The Architecture Travelbook", template: "%s — ATLAST" },
@@ -20,7 +18,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
+    <html lang="en" className={jost.variable}>
       <body className="flex min-h-screen flex-col">
         <a
           href="#main"

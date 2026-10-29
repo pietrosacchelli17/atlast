@@ -29,7 +29,7 @@ export default async function DestinationPage({ params }: PageProps<"/destinatio
         <div className="lg:col-span-5">
           <p className="eyebrow mb-4">{d.kind === "region" ? "Region" : "City"} · {d.country}</p>
           <h1 className="display h1">{d.name}</h1>
-          <p className="display mt-6 text-3xl italic leading-tight">{d.tagline}</p>
+          <p className="display mt-6 text-3xl  leading-tight">{d.tagline}</p>
           <div className="mt-8 space-y-4 text-mute">{d.intro.map((t, i) => <p key={i}>{t}</p>)}</div>
           <ul className="mt-6 flex flex-wrap gap-2">
             {d.character.map((c) => <li key={c} className="border border-line px-3 py-1 text-xs uppercase tracking-[0.12em]">{c}</li>)}

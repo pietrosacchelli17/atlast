@@ -29,7 +29,7 @@ export function Header() {
               key={n.href}
               href={n.href}
               aria-current={active(n.href) ? "page" : undefined}
-              className={`link-u py-1 text-[0.72rem] font-medium uppercase tracking-[0.14em] ${active(n.href) ? "text-ink" : "text-mute hover:text-ink"}`}
+              className={`link-u py-1 text-[0.72rem] font-normal uppercase tracking-[0.14em] ${active(n.href) ? "text-ink" : "text-mute hover:text-ink"}`}
             >
               {n.label}
             </Link>
@@ -38,7 +38,7 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/profile"
-            className="flex items-center gap-2 border border-line px-3.5 py-2 text-[0.72rem] font-medium uppercase tracking-[0.14em] transition-colors hover:border-ink"
+            className="flex items-center gap-2 border border-line px-3.5 py-2 text-[0.72rem] font-normal uppercase tracking-[0.14em] transition-colors hover:border-ink"
             aria-label={`Saved places (${saved.length})`}
           >
             Saved

@@ -14,7 +14,7 @@ export default function AboutPage() {
       <Container className="grid gap-12 pb-20 lg:grid-cols-12">
         <div className="lg:col-span-5"><Picture src="/images/about.jpg" alt="Architectural study" seed="about" className="aspect-[4/5]" /></div>
         <div className="space-y-6 text-lg leading-relaxed lg:col-span-6 lg:col-start-7">
-          <p className="display text-3xl italic leading-tight">Not a travel blog, and not a booking site.</p>
+          <p className="display text-3xl  leading-tight">Not a travel blog, and not a booking site.</p>
           <p>ATLAST is a curated atlas of places worth the journey: buildings, galleries, interiors, cafés, bars, hotels and quieter corners. It is made for architects, designers, students and curious travellers.</p>
           <p>We select fewer places and say more about each. Every entry is read through its architecture and context, and links to the guides and stories around it.</p>
           <p>ATLAST grew out of the studio work of Petrus Atelier, and shares its interest in craft, materials and how people use buildings.</p>

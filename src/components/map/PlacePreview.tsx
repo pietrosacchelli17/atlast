@@ -22,7 +22,7 @@ export function PlacePreview({ place, onClose, className = "" }: { place: Place;
           <p className="mt-2 line-clamp-3 text-sm text-mute">{place.summary}</p>
           {place.architect && <p className="mt-2 text-xs text-ink/75">{place.architect}{place.year ? `, ${place.year}` : ""}</p>}
           <div className="mt-auto flex flex-wrap items-center gap-3 pt-4">
-            <Link href={`/places/${place.slug}`} className="bg-ink px-4 py-2.5 text-[0.7rem] font-medium uppercase tracking-[0.14em] text-cream transition-colors hover:bg-stone-deep">
+            <Link href={`/places/${place.slug}`} className="bg-ink px-4 py-2.5 text-[0.7rem] font-normal uppercase tracking-[0.14em] text-cream transition-colors hover:bg-stone-deep">
               Read the place
             </Link>
             <SaveButton slug={place.slug} name={place.name} className="!px-3.5 !py-2.5 !text-[0.7rem]" />

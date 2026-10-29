@@ -33,7 +33,7 @@ export default async function GuidePage({ params }: PageProps<"/guides/[slug]">)
             <Link href={`/destinations/${g.destination}`} className="link-u">{dest?.name}</Link> · {g.duration} · {g.premium ? `Premium ${formatPrice(g.priceMinor)}` : "Free"}
           </p>
           <h1 className="display h1">{g.title}</h1>
-          <p className="display mt-6 text-3xl italic leading-tight">{g.summary}</p>
+          <p className="display mt-6 text-3xl  leading-tight">{g.summary}</p>
           <div className="mt-6 space-y-4 text-mute">{g.intro.map((t, i) => <p key={i}>{t}</p>)}</div>
           {g.demo && <DemoBadge className="mt-6 inline-block text-mute" />}
         </div>

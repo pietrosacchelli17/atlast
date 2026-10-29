@@ -7,7 +7,7 @@ export function JournalList({ articles }: { articles: Article[] }) {
   const types = Array.from(new Set(articles.map((a) => a.type))) as ArticleType[];
   const [type, setType] = useState<ArticleType | null>(null);
   const list = articles.filter((a) => !type || a.type === type);
-  const chip = (on: boolean) => `border px-3.5 py-2 text-[0.72rem] font-medium uppercase tracking-[0.12em] transition-colors ${on ? "border-ink bg-ink text-cream" : "border-line hover:border-ink"}`;
+  const chip = (on: boolean) => `border px-3.5 py-2 text-[0.72rem] font-normal uppercase tracking-[0.12em] transition-colors ${on ? "border-ink bg-ink text-cream" : "border-line hover:border-ink"}`;
   return (
     <>
       <div className="mt-10 flex flex-wrap gap-2" role="group" aria-label="Filter by type">

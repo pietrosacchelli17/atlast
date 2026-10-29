@@ -12,7 +12,7 @@ export function Footer() {
       <Container className="grid gap-14 py-16 md:grid-cols-12">
         <div className="md:col-span-5">
           <Wordmark className="text-5xl" light />
-          <p className="font-display mt-4 max-w-[26ch] text-2xl font-light italic leading-snug text-cream/80">
+          <p className="font-display mt-4 max-w-[26ch] text-2xl font-light  leading-snug text-cream/80">
             The Architecture Travelbook, always updated.
           </p>
           <Newsletter />

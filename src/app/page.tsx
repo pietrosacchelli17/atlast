@@ -24,7 +24,7 @@ export default function Home() {
               <span className="sr-only">ATLAST</span>
               <span aria-hidden>[AT]<span className="text-stone-deep">last</span></span>
             </h1>
-            <p className="display mt-8 max-w-[18ch] text-[clamp(1.9rem,3.6vw,3rem)] italic leading-[1.05]">
+            <p className="display mt-8 max-w-[18ch] text-[clamp(1.9rem,3.6vw,3rem)]  leading-[1.05]">
               Explore the world through a different perspective.
             </p>
             <p className="mt-5 max-w-[44ch] text-base text-mute">
@@ -79,7 +79,7 @@ export default function Home() {
                 <li key={c.id} className="border-b border-r border-line">
                   <Link href={`/explore?category=${c.id}`} className="group flex h-full min-h-[190px] flex-col justify-between p-6 transition-colors duration-300 hover:bg-ink hover:text-cream">
                     <span className="flex items-center justify-between">
-                      <span className={`grid h-6 w-6 place-items-center rounded-full text-[11px] font-medium ${c.pin === "A" ? "bg-ink text-cream group-hover:bg-cream group-hover:text-ink" : "bg-stone text-ink"}`}>{c.pin}</span>
+                      <span className={`grid h-6 w-6 place-items-center rounded-full text-[11px] font-normal ${c.pin === "A" ? "bg-ink text-cream group-hover:bg-cream group-hover:text-ink" : "bg-stone text-ink"}`}>{c.pin}</span>
                       <span className="text-xs tabular-nums opacity-70">{n}</span>
                     </span>
                     <span>

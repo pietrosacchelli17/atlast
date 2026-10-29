@@ -46,7 +46,7 @@ export default async function PlacePage({ params }: PageProps<"/places/[slug]">)
 
       <Container className="grid gap-12 py-14 lg:grid-cols-12">
         <div className="lg:col-span-7">
-          <p className="display text-3xl italic leading-tight sm:text-4xl">{p.summary}</p>
+          <p className="display text-3xl  leading-tight sm:text-4xl">{p.summary}</p>
           <div className="prose-ed mt-10 text-lg leading-relaxed">{p.description.map((t, i) => <p key={i}>{t}</p>)}</div>
           {p.demo && (
             <p className="mt-8 border-l-2 border-stone pl-4 text-sm text-mute">

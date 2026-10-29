@@ -29,7 +29,7 @@ export function ProfileClient() {
           <div className="border border-dashed border-line p-10 text-center">
             <p className="display text-3xl">Nothing saved yet.</p>
             <p className="mx-auto mt-2 max-w-[40ch] text-sm text-mute">Use the heart on any place, or the Save button in a map preview, to build a personal collection.</p>
-            <Link href="/explore" className="mt-6 inline-block bg-ink px-6 py-3.5 text-[0.78rem] font-medium uppercase tracking-[0.14em] text-cream hover:bg-stone-deep">Explore the Map →</Link>
+            <Link href="/explore" className="mt-6 inline-block bg-ink px-6 py-3.5 text-[0.78rem] font-normal uppercase tracking-[0.14em] text-cream hover:bg-stone-deep">Explore the Map →</Link>
           </div>
         ) : (
           groups.map((g) => (
